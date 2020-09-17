@@ -15,6 +15,7 @@ body {
 h1 {
   text-align: center;
   margin: 3rem;
+  letter-spacing: 0.5rem;
 }
 
 form {
@@ -43,6 +44,24 @@ form {
   margin-top: 2rem;
 }
 
-.plus, .minus {
+.plus, .minus, .plus2, .minus2 {
   margin: 2rem;
+  font-size: 2rem;
+  border-radius: 45%;
+  padding: 10px;
+}
+
+.plus, .plus2 {
+  margin-left: 4rem;
+  background-color: green;
+}
+
+.minus, .minus2 {
+  background-color: red;
+}
+
+.team-1, .team-2 {
+  border: 1px solid black;
+  border-radius: 2%;
+  padding: 3rem;
 }
