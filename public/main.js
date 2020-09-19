@@ -11,14 +11,16 @@ function main() {
 const plusFunc1 = function () {
   const plusButton = document.querySelector('.plus')
 
+  let score = parseFloat(document.querySelector('.score-1').innerHTML)
   plusButton.addEventListener('click', function (event) {
     event.preventDefault()
-    let score = parseFloat(document.querySelector('.score-1').innerHTML)
+
     score += 1
     if (score <= 21) {
       document.querySelector('.score-1').innerHTML = String(score)
     } else {
       window.alert('21 is the maximum score')
+      document.querySelector('.winner').innerHTML = 'Team 1 Wins'
     }
   })
 }
@@ -56,6 +58,7 @@ const plusFunc2 = function () {
     score += 1
     if (score <= 21) {
       document.querySelector('.score-2').innerHTML = String(score)
+      document.querySelector('.winner').innerHTML = 'Team 2 Wins'
     } else {
       window.alert('21 is the maximum score')
     }
