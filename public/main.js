@@ -20,7 +20,8 @@ const plusFunc1 = function () {
       document.querySelector('.score-1').innerHTML = String(score)
     } else {
       window.alert('21 is the maximum score')
-      document.querySelector('.winner').innerHTML = 'Team 1 Wins'
+      document.querySelector('.winner').innerHTML =
+        document.querySelector('.name-1').textContent + ' Win!!!'
     }
   })
 }
@@ -58,9 +59,10 @@ const plusFunc2 = function () {
     score += 1
     if (score <= 21) {
       document.querySelector('.score-2').innerHTML = String(score)
-      document.querySelector('.winner').innerHTML = 'Team 2 Wins'
     } else {
       window.alert('21 is the maximum score')
+      document.querySelector('.winner').innerHTML =
+        document.querySelector('.name-2').textContent + ' Win!!!'
     }
   })
 }
@@ -83,7 +85,6 @@ const minusFunc2 = function () {
 const teamName2 = function () {
   const secondInput = document.querySelector('.input-2')
   const name2 = document.querySelector('.name-2')
-  console.log(secondInput)
 
   secondInput.addEventListener('input', function (event) {
     name2.innerText = event.target.value

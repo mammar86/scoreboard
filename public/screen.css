@@ -29,12 +29,14 @@ form {
   justify-content: space-around;
 }
 
-.name-1, .name-2 {
+.name-1,
+.name-2 {
   font: 40px bold;
   text-align: center;
 }
 
-.score-1, .score-2 {
+.score-1,
+.score-2 {
   text-align: center;
   margin-top: 2rem;
   font: 40px bold;
@@ -44,24 +46,44 @@ form {
   margin-top: 2rem;
 }
 
-.plus, .minus, .plus2, .minus2 {
+.plus,
+.minus,
+.plus2,
+.minus2 {
   margin: 2rem;
   font-size: 2rem;
   border-radius: 45%;
   padding: 10px;
 }
 
-.plus, .plus2 {
+.plus,
+.plus2 {
   margin-left: 4rem;
   background-color: green;
 }
 
-.minus, .minus2 {
+.minus,
+.minus2 {
   background-color: red;
 }
 
-.team-1, .team-2 {
+.team-1,
+.team-2 {
   border: 1px solid black;
   border-radius: 2%;
   padding: 3rem;
+}
+
+#restart {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.restart {
+  width: 8rem;
+  background-color: cornsilk;
+  color: red;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
